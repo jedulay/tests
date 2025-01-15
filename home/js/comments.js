@@ -1,5 +1,5 @@
 
-  const app = Vue.createApp({
+  const comments = Vue.createApp({
     data() {
       return {
         guestName: '',
