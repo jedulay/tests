@@ -6,6 +6,7 @@ new Vue({
     },
     methods: {
       addEntry() {
+        console.log('Message Submitted');
         console.log('Name:', this.guestName);
         console.log('Message:', this.guestMessage);
         alert('Thank you for stopping by!');
