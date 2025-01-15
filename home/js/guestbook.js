@@ -1,4 +1,5 @@
-new Vue({
+<script>
+  new Vue({
     el: '#guestbook',
     data: {
       guestName: '',
@@ -6,10 +7,19 @@ new Vue({
     },
     methods: {
       addEntry() {
-        console.log('Message Submitted');
         console.log('Name:', this.guestName);
         console.log('Message:', this.guestMessage);
-        alert('Thank you for stopping by!');
+
+        if (Notification.permission === 'granted') {
+          new Notification('Thank you for stopping by!');
+        } else if (Notification.permission !== 'denied') {
+          Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+              new Notification('Thank you for stopping by!');
+            }
+          });
+        }
       }
     }
   });
+</script>
