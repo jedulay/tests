@@ -1,5 +1,4 @@
-
-  const comments = Vue.createApp({
+const comments = Vue.createApp({
     data() {
       return {
         guestName: '',
@@ -21,5 +20,5 @@
     }
   });
 
-  app.mount('#comments');
+  comments.mount('#comments');
 
