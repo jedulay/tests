@@ -179,6 +179,19 @@ p {
   }
 }
 
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment {
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
 .guestbook-container {
   background-color: #f8f7f2;
   border: 2px solid #562123;
@@ -190,43 +203,42 @@ p {
   border-radius: 10px;
 }
 
+.guestbook-container .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  .guestbook-container .header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.guestbook-container .header .title-container {
+  font-size: 24px;
+  font-weight: bold;
+  color: #562123;
+}
 
-  .guestbook-container .header .title-container {
-    font-size: 24px;
-    font-weight: bold;
-    color: #562123;
-  }
+.guestbook-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-  .guestbook-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+.guestbook-container input, .guestbook-container textarea {
+  padding: 10px;
+  border: 1px solid #562123;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-  .guestbook-container input, .guestbook-container textarea {
-    padding: 10px;
-    border: 1px solid #562123;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+.guestbook-container button {
+  background-color: #562123;
+  color: #f8f7f2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-  .guestbook-container button {
-    background-color: #562123;
-    color: #f8f7f2;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .guestbook-container button:hover {
-    background-color: #6c3a32;
-  }
+.guestbook-container button:hover {
+  background-color: #6c3a32;
+}
