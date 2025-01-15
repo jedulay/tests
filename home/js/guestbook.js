@@ -8,7 +8,7 @@ new Vue({
       addEntry() {
         console.log('Name:', this.guestName);
         console.log('Message:', this.guestMessage);
-        alert('Thank you for your message!');
+        alert('Thank you for stopping by!');
       }
     }
   });

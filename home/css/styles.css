@@ -4,6 +4,9 @@ body {
   background-color: #f8f7f2;
   color: #562123;
 }
+#ref ul {
+  margin-left: 230px;
+}
 
 a {
   color: #562123;
